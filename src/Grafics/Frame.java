@@ -15,6 +15,7 @@ public class Frame extends JFrame {
         this.setSize(1920, 1080); // Adjust size
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     // Method to add components to the frame

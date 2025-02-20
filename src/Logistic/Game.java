@@ -74,14 +74,14 @@ public class Game {
         livesPlayer2 = numberOfLifes;
         isPlayer1Turn = true;
 
-//        Border border = BorderFactory.createLineBorder(GREEN);
-//        Border border1 = BorderFactory.createLineBorder(YELLOW);
+        Border border = BorderFactory.createLineBorder(GREEN);
+        Border border1 = BorderFactory.createLineBorder(YELLOW);
 
 
         healthPanel = new HealthPanel(numberOfLifes);
-        healthPanel.setBounds(0, 525, 1920, 50); // domaci rozmery
+        healthPanel.setBounds(0, 400, 1920, 50); // domaci rozmery
         healthPanel.setOpaque(false);
-        // healthPanel.setBorder(border1);
+//      healthPanel.setBorder(border1);
         frame.add(healthPanel);
         updateHealthDisplay();
 
@@ -316,9 +316,9 @@ public class Game {
 
     private void whoWins() {
         if (player1.isAlive()) {
-            JOptionPane.showMessageDialog(frame, player2.getName() + " wins!");
-        } else {
             JOptionPane.showMessageDialog(frame, player1.getName() + " wins!");
+        } else {
+            JOptionPane.showMessageDialog(frame, player2.getName() + " wins!");
         }
     }
 

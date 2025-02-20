@@ -20,14 +20,14 @@ public class GifPanel extends JPanel {
         setLayout(null);
         rightLabel = new JLabel();
 
-       // rightLabel.setBounds(1246,425,256,256); // domaci rozmery
-        rightLabel.setBounds(1600,550,256,256);
+        rightLabel.setBounds(1246,425,256,256); // domaci rozmery
+        //rightLabel.setBounds(1600,550,256,256);
         rightLabel.setIcon(null); // Výchozí stav (prázdné)
         rightLabel.setIcon(rightMan);
 
         leftLabel = new JLabel();
-      //  leftLabel.setBounds(46,425,256,256); // domaci rozmery
-        leftLabel.setBounds(20,550,256,256);
+        leftLabel.setBounds(46,425,256,256); // domaci rozmery
+        //leftLabel.setBounds(20,550,256,256);
         leftLabel.setIcon(leftMan); // Výchozí stav (prázdné)
 
         // Přidání labelů do panelu

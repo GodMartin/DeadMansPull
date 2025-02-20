@@ -18,14 +18,14 @@ public class HealthPanel extends JPanel {
 
         for (int i = 0; i < numberOfLives; i++) {
             JLabel heartLabel = new JLabel(heartIcon);
-            heartLabel.setBounds(110 + i * 30, 30, 30, 30); // Adjust position as needed
+            heartLabel.setBounds(140 + i * 30, 30, 30, 30); // Adjust position as needed
             player1Hearts.add(heartLabel);
             add(heartLabel);
         }
 
         for (int i = 0; i < numberOfLives; i++) {
             JLabel heartLabel = new JLabel(heartIcon);
-            heartLabel.setBounds(1690 + i * 30, 30, 30, 30); // Adjust position as needed
+            heartLabel.setBounds(1350 + i * 30, 30, 30, 30); // Adjust position as needed
             player2Hearts.add(heartLabel);
             add(heartLabel);
         }
